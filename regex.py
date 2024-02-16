@@ -2,8 +2,6 @@ import re
 
 string = 'search inside of this text please!'
 
-pattern = "[aiueo]"
+match = re.search('this', string)
 
-match = re.findall(pattern, string)
-
-print(match)
+print(match)  # <_sre.SRE_Match object; span=(17, 21), match='this'>
